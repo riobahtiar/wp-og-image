@@ -20,3 +20,12 @@
  * https://www.gnu.org/licenses/gpl.txt
  */
 
+
+ // never allow direct file access
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
+if ( is_readable( __DIR__ . '/vendor/autoload.php' ) ) {
+    require __DIR__ . '/vendor/autoload.php';
+}

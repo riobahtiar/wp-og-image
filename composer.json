@@ -1,0 +1,41 @@
+{
+  "name": "riobahtiar/wp-og-image",
+  "description": "A simple plugin to manipulate your OG Image",
+  "type": "wordpress-plugin",
+  "keywords": [
+    "wordpress",
+    "plugin",
+    "image-manipulation"
+  ],
+  "require": {
+    "php": ">=7.1",
+    "intervention/image": "^2.7"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5",
+    "phpcompatibility/phpcompatibility-wp": "^2.1"
+  },
+  "license": "GPLv3",
+  "authors": [
+    {
+      "name": "Rio Bahtiar",
+      "email": "akhibahtiar@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "scripts": {
+    "lint": "phpcs wp-og-image.php includes",
+    "lint-fix": "phpcbf wp-og-image.php includes",
+    "test": "phpunit",
+    "test-single-site": "phpunit -c single-site.xml.dist",
+    "setup-local-tests": "bash bin/install-wp-tests.sh ep_wp_test root password mysql trunk true"
+  },
+  "extra": {
+    "installer-paths": {
+      "vendor/{$name}/": [
+        "type:wordpress-plugin",
+        "type:wordpress-theme"
+      ]
+    }
+  }
+}
