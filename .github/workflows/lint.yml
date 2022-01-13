@@ -24,7 +24,7 @@ jobs:
     - name: eslint
       uses: icrawl/action-eslint@v1
       with:
-        custom-glob: assets/js
+        custom-glob: assets/src/*.js
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   phpcs:

@@ -2,22 +2,40 @@
   "name": "wp-og-image",
   "version": "1.0.0",
   "description": "wp-og-image",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/riobahtiar/wp-og-image.git"
-  },
   "keywords": [],
-  "author": "",
+  "author": "Rio B",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/riobahtiar/wp-og-image/issues"
   },
   "homepage": "https://github.com/riobahtiar/wp-og-image#readme",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run development",
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "prod": "npm run production",
+    "production": "mix --production"
+  },
+  "dependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/runtime": "^7.16.3",
+    "@rollup/plugin-babel": "^5.3.0",
+    "autoprefixer": "^10.4.0"
+  },
   "devDependencies": {
-    "laravel-mix": "^6.0.39"
+    "axios": "^0.24.0",
+    "laravel-mix": "^6.0.39",
+    "lodash": "^4.17.21",
+    "resolve-url-loader": "^4.0.0",
+    "sass": "^1.47.0",
+    "sass-loader": "^12.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riobahtiar/wp-og-image.git"
   }
 }
