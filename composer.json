@@ -24,8 +24,8 @@
   ],
   "minimum-stability": "stable",
   "scripts": {
-    "lint": "phpcs wp-og-image.php includes",
-    "lint-fix": "phpcbf wp-og-image.php includes",
+    "lint": "phpcs .",
+    "lint-fix": "phpcbf .",
     "test": "phpunit",
     "test-single-site": "phpunit -c single-site.xml.dist",
     "setup-local-tests": "bash bin/install-wp-tests.sh ep_wp_test root password mysql trunk true"
