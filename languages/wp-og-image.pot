@@ -1,0 +1,43 @@
+# Copyright (C) 2022 Rio B
+# This file is distributed under the same license as the WP OG Image plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP OG Image 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-og-image\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2022-01-12T17:33:42+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.5.0\n"
+"X-Domain: wp-og-image\n"
+
+#. Plugin Name of the plugin
+msgid "WP OG Image"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://rio.my.id/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Open Graph Image Enhancer for Twitter, Facebook, Slack, etc"
+msgstr ""
+
+#. Author of the plugin
+msgid "Rio B"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://rio.my.id/a/wp-og-image/"
+msgstr ""
+
+#: includes/AdminOptions.php:17
+msgid "OG Image Options"
+msgstr ""
+
+#: includes/AdminOptions.php:18
+msgid "OG Image"
+msgstr ""

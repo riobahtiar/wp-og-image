@@ -22,7 +22,7 @@
       "email": "akhibahtiar@gmail.com"
     }
   ],
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "scripts": {
     "lint": "phpcs wp-og-image.php includes",
     "lint-fix": "phpcbf wp-og-image.php includes",

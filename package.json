@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/riobahtiar/wp-og-image#readme",
   "devDependencies": {
-    "laravel-mix": "^6.0.31"
+    "laravel-mix": "^6.0.39"
   }
 }
