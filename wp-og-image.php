@@ -29,7 +29,7 @@ define( 'WPOGI_URL', plugin_dir_url( __FILE__ ) );
 define( 'WPOGI_PATH', plugin_dir_path( __FILE__ ) );
 define( 'WPOGI_FILE', plugin_basename( __FILE__ ) );
 define( 'WPOGI_VERSION', '1.0.5' );
-defined('WPOGI_ENV') or define('WPOGI_ENV', 'production');
+defined( 'WPOGI_ENV' ) or define( 'WPOGI_ENV', 'production' );
 
-include_once __DIR__ . '/Boot.php';
+require_once __DIR__ . '/Boot.php';
 

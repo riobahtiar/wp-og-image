@@ -1,12 +1,12 @@
 <?php
 namespace WP_OG_Image;
 
-include_once WPOGI_PATH . 'includes/AdminOptions.php';
-include_once WPOGI_PATH . 'includes/Helper.php';
+require_once WPOGI_PATH . 'includes/AdminOptions.php';
+require_once WPOGI_PATH . 'includes/Helper.php';
 
 
 if ( is_readable( __DIR__ . '/vendor/autoload.php' ) ) {
-    require WPOGI_PATH . 'vendor/autoload.php';
+	require WPOGI_PATH . 'vendor/autoload.php';
 }
 
 
@@ -16,23 +16,24 @@ if ( is_readable( __DIR__ . '/vendor/autoload.php' ) ) {
  * @package WP_OG_Image
  */
 
-class Boot{
+class Boot {
 
 	public function __construct() {
 
 		$this->set_action();
-		//$this->set_filter();
+		// $this->set_filter();
 
-		if ( is_admin() )
+		if ( is_admin() ) {
 			new AdminOptions();
+		}
 
 	}
 
-	public function set_action(){
-		add_action('plugins_loaded', array($this, 'set_locale'));
+	public function set_action() {
+		add_action( 'plugins_loaded', array( $this, 'set_locale' ) );
 	}
 
-	public function set_filter(){
+	public function set_filter() {
 		return;
 	}
 
